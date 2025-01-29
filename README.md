@@ -5,7 +5,7 @@ Encryption with SHA3-512 making use of a 1024 bit Feistel Network in python
 
 This is a project that uses Feistel network and the SHA3-512 hash function to encrypt data. You may ask yourself what a one-way hash function would be able to do in a two-way encryption algorithm. 
 
-A feistel network is designed so that you have a function *f* that does not have to be reversible. One good example of a non reversible algorithm is a hash function. Here is an example of a feistel network :
+A feistel network is designed so that you have a function *f* that does not have to be reversible. There are many encryption algorithms that still use the feistel cipher to this day like DES (obsolete due to small key size), Twofish, Blowfish etc.  One good example of a non reversible algorithm is a hash function. Here is an example of a feistel network :
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Feistel_cipher_diagram_en.svg/410px-Feistel_cipher_diagram_en.svg.png)
 
@@ -25,19 +25,24 @@ Finally i want to make it clear that this is a project that is made for fun and 
 Clone the project
 
 ```bash
-  git clone https://github.com/TJulesL/SHA512-Encryption.git
+git clone https://github.com/TJulesL/SHA512-Encryption.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd SHA512-Encryption
+cd SHA512-Encryption
+```
+
+Install dependencies for hashing 
+```bash
+pip install cryptography
 ```
 
 Execute the file
 
 ```bash
-  python3 SHA512-encryption.py
+python3 SHA512-encryption.py
 ```
 
 ## Features
